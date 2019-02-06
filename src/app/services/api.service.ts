@@ -11,16 +11,20 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   /**
-   * Featch games
+   * Fetch games
    * @param room_id 
    */
   public requestGames() {
-    return this.http.get(environment.apiEndpoint + "/games").pipe(
+    return this.http.get(environment.apiEndpoint + "/games1").pipe(
       tap(null, this.process_error.bind(this))
     );
   }
 
-  public process_error(req) {
-    console.error("HTTP error", req)
+  /**
+   * Error handler
+   * @param error
+   */
+  public process_error(error) {
+    console.error("HTTP error", error.message)
   }
 }
