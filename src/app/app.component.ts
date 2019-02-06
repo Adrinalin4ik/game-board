@@ -66,7 +66,7 @@ export class AppComponent implements OnInit {
   /**
    * Go to next page
    */
-  public next_page() {
+  public nextPage() {
     this.pagination_current_page++
     this.loadGames()
   }
@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
   /**
    * Go to previous page
    */
-  public prev_page() {
+  public prevPage() {
     this.pagination_current_page = this.pagination_current_page > 0 ? this.pagination_current_page-1 : 0;
     this.loadGames()
   }
