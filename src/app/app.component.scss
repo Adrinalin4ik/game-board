@@ -19,3 +19,17 @@ td, th {
   padding: 20px;
   border-bottom: none;
 }
+
+.pagination {
+  padding: 10px 0;
+  float: right;
+  font-size: 14px;
+  color: rgba(0,0,0,.42);
+}
+
+.sortable {
+  cursor: pointer;
+  &.sort {
+    color:black;
+  }
+}

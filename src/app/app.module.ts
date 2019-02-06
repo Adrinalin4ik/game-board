@@ -9,6 +9,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 
 import { ApiService } from './services/api.service'
+import { MatSortModule } from '@angular/material/sort'
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ApiService } from './services/api.service'
     BrowserAnimationsModule,
     HttpClientModule,
     MatTableModule,
-    MatInputModule
+    MatInputModule,
+    MatSortModule,
+    MatButtonModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
