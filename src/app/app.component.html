@@ -3,9 +3,9 @@
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
   </mat-form-field>
   <div class="pagination">
-    <button mat-button (click)="prev_page()">Prev</button>
+    <button mat-button (click)="prevPage()">Prev</button>
     <span>Page {{pagination_current_page + 1}}</span>
-    <button mat-button (click)="next_page()">Next</button>
+    <button mat-button (click)="nextPage()">Next</button>
   </div>
   <div class="mat-elevation-z8" *ngIf="games.length">
     <mat-table [dataSource]="dataSource">
