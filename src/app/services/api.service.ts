@@ -15,7 +15,7 @@ export class ApiService {
    * @param room_id 
    */
   public requestGames() {
-    return this.http.get(environment.apiEndpoint + "/games1").pipe(
+    return this.http.get(environment.apiEndpoint + "/games").pipe(
       tap(null, this.process_error.bind(this))
     );
   }
