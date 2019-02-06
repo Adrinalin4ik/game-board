@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ContentChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from './services/api.service';
 import { GameModel } from './models/game';
 import { IGame } from './interfaces/game'
