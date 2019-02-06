@@ -4,6 +4,6 @@ export class GameModel {
     public playersMin: number;
     public playersMax: number;
     public creationDateUtc: Date;
-    public ratingUser: number;
+    public bggRating: number;
     public teseraUrl: string;
 }

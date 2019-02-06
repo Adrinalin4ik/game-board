@@ -4,6 +4,6 @@ export interface IGame {
     playersMin: number;
     playersMax: number;
     creationDateUtc: Date;
-    ratingUser: number;
+    bggRating: number;
     teseraUrl: string;
   }
